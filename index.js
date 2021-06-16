@@ -44,9 +44,9 @@ class Square extends Polygon {
       }
     });
     if(count === this.sides.length) {
-      return true
-    } else {;
-      return false
+      return true;
+    } else {
+      return false;
     }
   }
 
