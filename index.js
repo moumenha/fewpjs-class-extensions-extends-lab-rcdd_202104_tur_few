@@ -36,8 +36,24 @@ class Square extends Polygon {
     super(sides);
   }
   get isValid() {
-    let check = 
+    let check = this.sides[1];
+    let count = 0;
+    this.sides.forEach(function(side) {
+      if(side === check) {
+        count++;
+      }
+    });
+    if(count === this.sides.length) {
+      return true
+    } else {;
+      return false
+    }
   }
+
+  get area() {
+   let area = this.sides[0] * this.sides[1];
+   return area;
+  }  
   
 }
 
