@@ -36,7 +36,7 @@ class Square extends Polygon {
     super(sides);
   }
   get isValid() {
-    
+    let check = 
   }
   
 }
